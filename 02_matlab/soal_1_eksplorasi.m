@@ -4,6 +4,9 @@
 % Parameter: N=2, a=0, b=2, K=3, theta0=10, alpha=0.003
 % =====================================================
 clc; clear; close all;
+% Timestamp verifikasi
+disp('=== TIMESTAMP VERIFIKASI ===');
+disp(datetime('now', 'Format', 'default'))
 N=2; a=0; b=2; K=3;
 i = 1:7;
 D = 20 + (K.*i) + mod(a.*i,7) - mod(b.*i,5);
